@@ -8,7 +8,7 @@ BB_TOKEN="ATCTT3xFfGN0A6xCuuBWma5Cd0Jwxbd8AQZP4bK_3DILs3BrLneFZetnn_qRnlrV356QG8
 GH_REPO="test_ghrepo"
 GH_USERNAME="Ayushsaini20"
 GH_EMAIL="ayushsaini963@gmail.com"
-BB_REPO_URL="https://$BB_TOKEN@bitbucket.org/$BB_WORKSPACE/$BB_REPO.git"
+BB_REPO_URL=https://x-token-auth:"ATCTT3xFfGN0A6xCuuBWma5Cd0Jwxbd8AQZP4bK_3DILs3BrLneFZetnn_qRnlrV356QG8wZPmwgkKM0H5mWhHIbsGBjMtd4jC_YWPlneOs10JunPoAXKsgLuaJeHIgIkahyFBrrsEeudYg2FCYw01ciK6tRzM-9UkRY5sNlLBO7JHYVL_YI8TU=BEED5B08@bitbucket.org"/bb_to_gh/test_repo.git
 GITHUB_REMOTE_URL="https://github.com/$GH_USERNAME/$GH_REPO.git"
 
 echo "Cloning BitBucket Repository into GitHub Runner Context"
