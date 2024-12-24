@@ -17,7 +17,7 @@ cd $BB_REPO || { echo "Failed to enter repository directory"; exit 1; }
 
 echo "Creating GitHub Repository with GH APIs"
 curl -X POST https://api.github.com/user/repos \
--H "Authorization: Bearer $GHE_TOKEN" \
+-H "Authorization: Bearer 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" \
 -H "Accept: application/vnd.github+json" \
 -d "{
   \"name\": \"$GH_REPO\",
@@ -50,7 +50,7 @@ fi
 
 echo "Marking the BitBucket Repository as Archived (Read-Only)..."
 curl -X PUT "https://api.bitbucket.org/2.0/repositories/$BB_WORKSPACE/$BB_REPO" \
--H "Authorization: Bearer $BB_TOKEN" \
+-H "Authorization: Bearer ATCTT3xFfGN0A6xCuuBWma5Cd0Jwxbd8AQZP4bK_3DILs3BrLneFZetnn_qRnlrV356QG8wZPmwgkKM0H5mWhHIbsGBjMtd4jC_YWPlneOs10JunPoAXKsgLuaJeHIgIkahyFBrrsEeudYg2FCYw01ciK6tRzM-9UkRY5sNlLBO7JHYVL_YI8TU=BEED5B08" \
 -H "Content-Type: application/json" \
 -d "{
   \"is_private\": true,
