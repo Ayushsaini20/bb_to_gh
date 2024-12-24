@@ -8,7 +8,7 @@ BB_TOKEN=ATBBGnRcp5nuMWqy6W9GpAN8mQRN221E5FAC
 GH_REPO="test_ghrepo"
 GH_USERNAME="Ayushsaini20"
 GH_EMAIL="ayushsaini963@gmail.com"
-BB_REPO_URL="https://ayushsai@bitbucket.org/$BB_WORKSPACE/$BB_REPO.git"
+BB_REPO_URL="https://$BB_TOKEN@bitbucket.org/$BB_WORKSPACE/$BB_REPO.git"
 GITHUB_REMOTE_URL="https://github.com/$GH_USERNAME/$GH_REPO.git"
 
 echo "Cloning BitBucket Repository into GitHub Runner Context"
