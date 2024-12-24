@@ -9,7 +9,7 @@ GH_REPO="test_ghrepo"
 GH_USERNAME="Ayushsaini20"
 GH_EMAIL="ayushsaini963@gmail.com"
 BB_REPO_URL=https://x-token-auth:"ATCTT3xFfGN0A6xCuuBWma5Cd0Jwxbd8AQZP4bK_3DILs3BrLneFZetnn_qRnlrV356QG8wZPmwgkKM0H5mWhHIbsGBjMtd4jC_YWPlneOs10JunPoAXKsgLuaJeHIgIkahyFBrrsEeudYg2FCYw01ciK6tRzM-9UkRY5sNlLBO7JHYVL_YI8TU=BEED5B08@bitbucket.org"/bb_to_gh/test_repo.git
-GITHUB_REMOTE_URL="https://github.com/$GH_USERNAME/$GH_REPO.git"
+GITHUB_REMOTE_URL=https://github.com/Ayushsaini20/test_ghrepo.git
 
 echo "Cloning BitBucket Repository into GitHub Runner Context"
 git clone $BB_REPO_URL
@@ -20,7 +20,7 @@ curl -X POST https://api.github.com/user/repos \
 -H "Authorization: Bearer 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" \
 -H "Accept: application/vnd.github+json" \
 -d "{
-  \"name\": \"$GH_REPO\",
+  \"name\": \"https://github.com/Ayushsaini20/test_ghrepo.git\",
   \"description\": \"Test Repo migrated from Bitbucket\",
   \"private\": true
 }"
