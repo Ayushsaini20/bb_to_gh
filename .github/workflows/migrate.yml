@@ -1,4 +1,4 @@
-name: BB-GHE Migrator
+name: bb_to_gh
 
 on:
   push:
