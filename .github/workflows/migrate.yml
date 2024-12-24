@@ -1,0 +1,26 @@
+name: BB-GHE Migrator
+
+on:
+  push:
+    branches: [ "main" ]
+
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+        name: Clone GH Repo to Runner Context
+      
+      - name: Migration Job
+        env:
+          BB_TOKEN: ${{ secrets.BB_TOKEN }}
+          GHE_TOKEN: ${{ secrets.GHE_TOKEN }}
+        run: |
+          bash migrate.sh
