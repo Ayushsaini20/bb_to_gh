@@ -23,4 +23,4 @@ jobs:
           BB_TOKEN: ${{ secrets.BB_TOKEN }}
           GHE_TOKEN: ${{ secrets.GHE_TOKEN }}
         run: |
-          bash migrate.sh
+          bash m1.sh
